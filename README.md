@@ -28,6 +28,12 @@ This is a React-based task management application that allows users to organize 
 4. Start the Vite development server: npm run dev
 5. Access the application: Open your browser and go to http://localhost:3000 to view and interact with the task management app.
 
+## Deployment Link
+https://smart-task-manager.vercel.app/
+
+## Snap of App
+![Smart-Task-Manager](https://github.com/neha20k/smart-task-manager/assets/133201849/1d750bf7-a095-4fd8-a5f3-28ba373d7496)
+
 ## Usage
 
 Upon starting the application, users can:
