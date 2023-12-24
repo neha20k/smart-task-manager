@@ -24,7 +24,8 @@ const BarGraph = ({ graphData }: IGraphDataItem) => {
 
     const getData = () => barGraphData
 
-    const chartOptions = {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const chartOptions: any = {
         title: {
             text: 'Priority vs Due Date',
         },

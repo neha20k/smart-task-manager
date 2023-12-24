@@ -28,7 +28,8 @@ const PieChart = ({ graphData }: IGraphDataItem) => {
     { taskStatus: STATUSES_OBJ.COMPLETED, count: pieData.COMPLETED },
   ];
 
-  const options = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const options: any = {
     title: {
       text: 'Overall Task Anaysis',
     },
