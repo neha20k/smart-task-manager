@@ -26,7 +26,7 @@ const TaskItem = ({ status, items, id, tasks, setTasks }: ITaskItem) => {
             <span className="counter">{items?.length}</span>
           </div>
           <div className="items-container">
-            {items.map((item, index) => {
+            {items?.map((item, index) => {
               const { id, name, priority, dueDate } = item
               return <Draggable draggableId={id} index={index} key={id}>
                 {(provided) => (

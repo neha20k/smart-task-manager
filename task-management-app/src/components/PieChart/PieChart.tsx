@@ -10,7 +10,7 @@ const PieChart = ({ graphData }: IGraphDataItem) => {
   useEffect(() => {
     const rawGraphData: Record<string, number> = {};
     for (const item of graphData) {
-      rawGraphData[item.status] = item.items.length;
+      rawGraphData[item.status] = item?.items?.length;
     }
     const newData = {
       ADDED: rawGraphData.ADDED || 0,

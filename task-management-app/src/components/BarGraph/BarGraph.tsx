@@ -10,13 +10,12 @@ const BarGraph = ({ graphData }: IGraphDataItem) => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const newData: any = [];
         for (const item of graphData) {
-            const { items } = item;
-            const transformedItems = items.map(data => {
+            const transformedItems = item?.items?.map(data => {
                 const { priority, dueDate } = data;
                 const daysLeft = getDaysLeft(dueDate);
                 const capitalisePriority = priority.toUpperCase()
                 return { priority: capitalisePriority, dueDate: daysLeft };
-            });
+            }) || [];
             newData.push(...transformedItems);
         }
         setBarGraphData(newData);
